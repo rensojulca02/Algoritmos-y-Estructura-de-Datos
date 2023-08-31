@@ -1,0 +1,14 @@
+int s = 0; // asignacion --> 1 
+
+double prom = 0; // asignacion --> 1 
+
+for (int i = 0; i < n; i++ => i = i + 1) { // 1 + n(1 + INTERNO + 1 + 1)
+    s = s + A[i]; // 1 + 1 + 1
+    prom = s / (double) n; // 1 + 1
+    // INTERNO = 5
+}
+
+printf("Suma:%d\nProm:%d", s, prom); // 1
+
+Tiempo detallado: 1 + 1 + 1 + n(1 + 5 + 1 + 1) + 1 = 4 + 8n
+Tiempo asintotico: O(n) -> Lineal
